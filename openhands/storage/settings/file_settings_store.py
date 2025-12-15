@@ -22,7 +22,7 @@ class FileSettingsStore(SettingsStore):
             kwargs = json.loads(json_str)
             settings = Settings(**kwargs)
 
-            # Turn on V1 in all OSS conversations
+            # Turn on V1 in OpenHands
             # We can simplify / remove this as part of V0 removal
             settings.v1_enabled = True
 
